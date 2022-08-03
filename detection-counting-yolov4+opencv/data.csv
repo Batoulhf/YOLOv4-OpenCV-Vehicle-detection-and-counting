@@ -1,0 +1,3 @@
+Direction,car,motorcycle,bus,truck,van
+Up,1,0,0,0,0
+Down,0,0,0,0,0
