@@ -90,6 +90,29 @@ The scripts can be accessed from the [Github Repo](https://github.com/theAIGuysC
 
 Just download the two files to your local machine and upload them to your Google Drive so we can use them in the Colab Notebook.
 
+## Train Your Custom Object Detector
+```
+!./darknet detector train <path to obj.data> <path to custom config> yolov4.conv.137 -dont_show -map
+```
+## Run Your Custom Object Detector
 
+On image:
+
+run custom detector with this command (upload an image to your google drive to test, thresh flag sets accuracy that detection must be in order to show it)
+```
+!./darknet detector test data/obj.data cfg/yolov4-obj.cfg yolov4/backup/yolov4-obj_last.weights yourimage.jpg -thresh 0.3
+```
+![image]()
+
+On video :
+```
+!./darknet detector demo data/obj.data cfg/yolov4-obj.cfg /backup/yolov4-obj_last.weights -dont_show yourvideo.mp4 -i 0 -out_filename results.mp4
+```
+![image]()
+
+# Next up - Follow the jupyter notebook!
+[![open in colab]([https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Obk_IkJM3rIKW6OUczLvS_qiuB8N8pqQ?authuser=4#scrollTo=0W0MpUaTCJro](https://colab.research.google.com/drive/11HCG-yqNjG4nsJGZXEyYXxbL1SBULE2Y?authuser=4#scrollTo=8dfPY2h39m-T))
+
+# Counting
 
 
