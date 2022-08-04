@@ -109,7 +109,7 @@ On video :
 ```
 !./darknet detector demo data/obj.data cfg/yolov4-obj.cfg /backup/yolov4-obj_last.weights -dont_show yourvideo.mp4 -i 0 -out_filename results.mp4
 ```
-![image]()
+![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/vid.gif)
 
 # Next up - Follow the jupyter notebook!
 [![open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11HCG-yqNjG4nsJGZXEyYXxbL1SBULE2Y?authuser=4#scrollTo=8dfPY2h39m-T)
