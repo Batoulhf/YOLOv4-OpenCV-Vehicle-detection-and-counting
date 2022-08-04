@@ -41,7 +41,7 @@ data/obj/img1.jpg
 data/obj/img2.jpg
 data/obj/img3.jpg
 ```
-## Configuring Files for Training
+### Configuring Files for Training
 
 download cfg file from darknet and edit the .cfg to fit your needs based on your object.
 
@@ -49,7 +49,7 @@ I recommend having `batch = 64` and `subdivisions = 16` for ultimate results. If
 
 Make the rest of the changes to the cfg based on how many classes you are training your detector on.
 
-Note: I set my `max_batches = 6000` , `steps = 4800` , `5400`, I changed the `classes = 1` in the three YOLO layers and `filters = 18` in the three convolutional layers before the YOLO layers.
+Note: I set my `max_batches = 10000` , `steps = 8000` , `9000`, I changed the `classes = 5` in the three YOLO layers and `filters = 30` in the three convolutional layers before the YOLO layers.
 
 How to Configure Your Variables:
 
@@ -63,4 +63,17 @@ How to Configure Your Variables:
 
 `filters = (# of classes + 5) * 3` (so if you are training for one class then your filters = 18, but if you are training for 4 classes then your filters = 27)
 
-****Optional: If you run into memory issues or find the training taking a super long time. In each of the three yolo layers in the cfg, change one line from random = 1 to random = 0 to speed up training but slightly reduce accuracy of model. Will also help save memory if you run into any memory issues.
+- Optional: If you run into memory issues or find the training taking a super long time. In each of the three yolo layers in the cfg, change one line from random = 1 to random = 0 to speed up training but slightly reduce accuracy of model. Will also help save memory if you run into any memory issues.
+
+### obj.names and obj.data
+Create a new file within a code or text editor called obj.names where you will have one class name per line in the same order as your classes.txt from the dataset generation step.
+Example for multiclass obj.names file:
+![image]()
+
+
+
+
+You will also create a obj.data file and fill it in like this (change your number of classes accordingly, as well as your backup location)
+![image]()
+This backup path is where we will save the weights to of our model throughout training. Create a backup folder in your google drive and put its correct path in this file.
+
