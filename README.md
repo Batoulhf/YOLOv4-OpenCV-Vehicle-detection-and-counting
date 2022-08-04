@@ -68,12 +68,28 @@ How to Configure Your Variables:
 ### obj.names and obj.data
 Create a new file within a code or text editor called obj.names where you will have one class name per line in the same order as your classes.txt from the dataset generation step.
 Example for multiclass obj.names file:
+
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/objName.png)
 
 
 
 
+
 You will also create a obj.data file and fill it in like this (change your number of classes accordingly, as well as your backup location)
+
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/objData.png)
+
 This backup path is where we will save the weights to of our model throughout training. Create a backup folder in your google drive and put its correct path in this file.
+
+### Generating train.txt and test.txt
+The last configuration files needed before we can begin to train our custom detector are the train.txt and test.txt files which hold the relative paths to all our training images and valdidation images.
+
+Luckily I have found a scripts that eaily generate these two files withe proper paths to all images.
+
+The scripts can be accessed from the [Github Repo](https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial/tree/master/yolov4)
+
+Just download the two files to your local machine and upload them to your Google Drive so we can use them in the Colab Notebook.
+
+
+
 
