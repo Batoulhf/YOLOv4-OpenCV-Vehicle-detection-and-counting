@@ -102,9 +102,6 @@ run custom detector with this command (upload an image to your google drive to t
 ```
 !./darknet detector test data/obj.data cfg/yolov4-obj.cfg yolov4/backup/yolov4-obj_last.weights yourimage.jpg -thresh 0.3
 ```
-![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/imgTest.png)
-![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/imgTest2.jpg)
-
 On video :
 ```
 !./darknet detector demo data/obj.data cfg/yolov4-obj.cfg /backup/yolov4-obj_last.weights -dont_show yourvideo.mp4 -i 0 -out_filename results.mp4
