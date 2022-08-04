@@ -102,7 +102,8 @@ run custom detector with this command (upload an image to your google drive to t
 ```
 !./darknet detector test data/obj.data cfg/yolov4-obj.cfg yolov4/backup/yolov4-obj_last.weights yourimage.jpg -thresh 0.3
 ```
-![image]()
+![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/imgTest.png)
+![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/imgTest2.jpg)
 
 On video :
 ```
@@ -111,7 +112,7 @@ On video :
 ![image]()
 
 # Next up - Follow the jupyter notebook!
-[![open in colab]([https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Obk_IkJM3rIKW6OUczLvS_qiuB8N8pqQ?authuser=4#scrollTo=0W0MpUaTCJro](https://colab.research.google.com/drive/11HCG-yqNjG4nsJGZXEyYXxbL1SBULE2Y?authuser=4#scrollTo=8dfPY2h39m-T))
+[![open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11HCG-yqNjG4nsJGZXEyYXxbL1SBULE2Y?authuser=4#scrollTo=8dfPY2h39m-T)
 
 # Counting
 
