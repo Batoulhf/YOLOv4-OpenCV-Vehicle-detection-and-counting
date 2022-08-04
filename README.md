@@ -1,4 +1,4 @@
-# YOLOv4-OpenCV-Vehicle-detection-and-counting-using-
+# YOLOv4-OpenCV-Vehicle-detection-and-counting
 Vehicle detection, classification  and counting using the YOLOv4 model with OpenCV (Open-CV is a real-time computer vision library of Python)
 
 This Repository walks you through building, training and running your own YOLOv4 object detector. Next, after the vehicles are detected, they are classified into different classes. Then We’ve used the YOLOv4 weights file and cfg file, along with OpenCV to count vehicles. 
