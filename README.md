@@ -114,3 +114,9 @@ On video :
 # Counting
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/count.gif)
 
+
+# More details
+
+* Paper YOLOv4: https://arxiv.org/abs/2004.10934
+* source code YOLOv4 - Darknet (use to reproduce results): https://github.com/AlexeyAB/darknet
+* About Darknet framework: http://pjreddie.com/darknet/
