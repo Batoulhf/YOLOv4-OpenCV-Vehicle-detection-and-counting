@@ -114,6 +114,18 @@ On video :
 [![open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11HCG-yqNjG4nsJGZXEyYXxbL1SBULE2Y?authuser=4#scrollTo=8dfPY2h39m-T)
 
 # Counting
+* We used OpenCV's DNN (Deep Neural Network) module to work directly with YOLOv4 (OpenCV has a built-in function to run DNN algorithms). 
+* We created two programs, the first was the tracker which uses the concept of Euclidean distance to keep track of an object. It calculates the difference between two center points of an object in the current frame compared to the previous frame, and if the distance is less than the threshold distance, it confirms that the object is the same object as the previous image, and the 2nd one was the main detection program.
+
+* First, we import all the necessary packages we need for the project and initialize the EuclideanDistTracker() object from the tracker we created earlier. Next, we load the YO LOv4 model weights and configuration files. YOLOv4 is trained on our dataset which contains 5 classes (car, bus, van, truck, motorcycle), so we read the class names file and store the names in a list. And finally we Configure the network using the cv2.dnn.readNetFromDarknet() function.
+
+* Created a function of detected objects from the network output. 
+* Keep track of each detected object and update the position of objects. 
+* Generating a random color for each class in our dataset. 
+* Created a function that counts the number of vehicles that have crossed the road. 
+* We keep track of each vehicle position and their corresponding IDs. 
+* After that, we draw the counting texts on the frame to show the vehicle counting in real time, and display the output video in a new opencv window.
+
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/count.gif)
 
 
