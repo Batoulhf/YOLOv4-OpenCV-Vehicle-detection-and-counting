@@ -74,9 +74,6 @@ Example for multiclass obj.names file:
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/objName.png)
 
 
-
-
-
 You will also create a obj.data file and fill it in like this (change your number of classes accordingly, as well as your backup location)
 
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/objData.png)
@@ -108,6 +105,8 @@ On video :
 ```
 !./darknet detector demo data/obj.data cfg/yolov4-obj.cfg /backup/yolov4-obj_last.weights -dont_show yourvideo.mp4 -i 0 -out_filename results.mp4
 ```
+Result :
+
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/vid.gif)
 
 # Next up - Follow the jupyter notebook!
