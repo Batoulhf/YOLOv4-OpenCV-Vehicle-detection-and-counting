@@ -126,6 +126,7 @@ On video :
 * We keep track of each vehicle position and their corresponding IDs. 
 * After that, we draw the counting texts on the frame to show the vehicle counting in real time, and display the output video in a new opencv window.
 
+Here is the result :
 ![image](https://github.com/Batoulhf/YOLOv4-OpenCV-Vehicle-detection-and-counting/blob/main/Implementation/count.gif)
 
 
