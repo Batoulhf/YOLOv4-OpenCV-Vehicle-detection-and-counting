@@ -3,7 +3,7 @@ Vehicle detection, classification  and counting using the YOLOv4 model with Open
 
 This Repository walks you through building, training and running your own YOLOv4 object detector. Next, after the vehicles are detected, they are classified into different classes. Then We’ve used the YOLOv4 weights file and cfg file, along with OpenCV to count vehicles. 
 
-[![open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11HCG-yqNjG4nsJGZXEyYXxbL1SBULE2Y?authuser=4#scrollTo=8dfPY2h39m-T)
+[![open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KpfV77oGyY7KUzbByfhF8_i0kXi-jObL?usp=sharing)
 
 ## Implementation
 
